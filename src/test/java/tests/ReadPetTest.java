@@ -1,7 +1,5 @@
 package tests;
 
-import api.CreatePetSteps;
-import api.ReadPetSteps;
 import data.TestDataGenerator;
 import models.Pet;
 import org.testng.annotations.Test;
@@ -9,8 +7,6 @@ import utils.RandomUtils;
 
 public class ReadPetTest extends BaseTest {
     private static final String PET_NOT_FOUND_RESPONSE_MESSAGE = "Pet not found";
-    private final CreatePetSteps createPetSteps = new CreatePetSteps();
-    private final ReadPetSteps readPetSteps = new ReadPetSteps();
 
     @Test(description = "Get a pet by id - 200 Success")
     public void getPetById() {
